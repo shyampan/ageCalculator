@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body{
+            background:url(/triangles-g3df47d380_1280.png);
+            
+        }
+        .heading{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .age{
+            color: white;
+            font-size: 24px;
+            width: 60%;
+            position: relative;
+            left: 21%;
+            margin-top: 60px;
+        }
+        .main{
+            background: none;
+            width: 60%;
+            text-align: center;
+            position: relative;
+           
+            height: 50%;
+            border: 2px solid rebeccapurple;
+        }
+
+        .present , .birthday{
+            margin: 54px;
+        }
+        .cac{
+            height: 34px;
+            width: 80px;
+            background-color:  greenyellow;
+            border-radius: 8px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="heading"><h1>Calculate Your Age</h1></div>
+
+    <div class="age">The Age Calculator can determine the age or interval between two dates.</div>
+    
+    <center>
+    <div class="main" style="color: white;">
+      <p class="birthday">
+        Date of your Birthday : <input type="text" placeholder="Date" id="date1" > <input type="text" placeholder="Month" id="month1"> <input type="text" placeholder="Year" id="year1">
+    </p>
+
+    <p class="present">
+        Age at the Date of	: <input type="text" placeholder="Date" id="date2"> <input type="text" placeholder="Month" id="month2"> <input type="text" placeholder="Year" id="year2">
+    </p>
+    <button class="cac" onclick="shyam()">Calculate</button>
+    <div id="empty"></div>
+    </div>
+
+    
+    </center>
+
+   
+    <script>
+
+        shyam = () => {
+                    empty.innerHTML=ans;
+                }
+            
+        let empty = document.getElementById('empty');
+      
+
+        let date1 = document.getElementById("date1").value;
+        let month1 = document.getElementById('month1').value;
+        let year1 = document.getElementById('year1').value;
+
+        let date2 = document.getElementById('date2').value;
+        let month2 = document.getElementById('month2').value;
+        let year2 = document.getElementById('year2').value;
+
+        let date = Math.abs(date1-date2);
+        let month = Math.abs(month1-month2);
+        let year = Math.abs(year1-year2);
+
+        var ans = ` ${year} years ${month} months and ${date} `;
+
+
+
+    
+        
+
+        
+        
+        
+    </script>
+
+</body>
+</html>

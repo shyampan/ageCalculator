@@ -1,4 +1,5 @@
-Age Calculator
+<h1>Age Calculator</h1>
+<hr>
 Overview
 
 This is a web application for calculating age based on user input. It is built using HTML, CSS, and JavaScript, providing a simple and user-friendly interface to determine the exact age in years, months, and days.
